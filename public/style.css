@@ -57,4 +57,22 @@ backdrop-filter: blur( 6px );
 border-radius: 10px;
 }
 
+.nav-item a{
+    color: whitesmoke !important;
+    font-size: 18px;
+}
+
+
+.bg-effect{
+
+    background: #e0e0e0;
+    color: #3D5A80;
+}
+.bg-effect h1{
+    color: #293241;
+}
+
+.sub-title{
+    color: #293241;
+}
 
