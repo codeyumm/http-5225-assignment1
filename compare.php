@@ -25,7 +25,7 @@
 
     ?>
 
-    <div class="row">
+    <div class="row compare-section">
 
         <div class="col-12">
             <h3>Compare two food items</h3>
@@ -96,15 +96,24 @@
             $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
             // Print the entire array
-            print_r($rows);
+            // print_r($rows);
             // for testing response from db
             // echo '<pre>';
             // echo print_r($result); 
             // echo '</pre>';
             ?> 
             
+            <?php
             
-            <div class="table-responsive">
+                $colArray = array("unit", "price", "calories", "protein_g", "calcium_g", "vitamin_a_iu",
+                                    "vitamin_b1_mg", "vitamin_b2_mg", "niacin_mg", "vitamin_c_mg");
+
+                $fieldArray = array("Unit", "Price in $", "Calories", "Protein", "Calcium", "Vitamin A",
+                                    "Vitamin B1", "Vitamin B2", "Niacin", "Votamin C");
+
+            ?>
+            
+            <div class="table-responsive mt-4">
                     <table class="table table-striped fa-check text-successtable-border border-light">
                         <thead class="border-light">
                             <tr>
@@ -118,23 +127,25 @@
                         </thead>
                         
                     <tbody>
+                        
+                        
+                        <?php   
+                                // counter to iterrate fieldArray
+                                $i = 0; 
+                                foreach($colArray as $col) { 
+                        ?>
+
+                            <tr>
+                                <th scope="row"> <?php echo $fieldArray[$i]; ?> </th>
+                                <?php foreach( $result as $item) {?>
+                                    <td><i class="fas fa-check"><?php echo $item[$col]; ?></i></td>
+                                <?php } ?>
+                            </tr>
+                        
+                        <?php $i++; } ?>
+                            
 
 
-                            <tr>
-                                <th scope="row">Lorem Ipsum</th>
-                                <td><i class="fas fa-check text-success"></i></td>
-                                <td><i class="fas fa-times text-danger"></i></td>
-                            </tr>
-                            <tr>
-                            <th scope="row">Lorem Ipsum</th>
-                            <td><i class="fas fa-check text-success"></i></td>
-                            <td><i class="fas fa-check text-success"></i></td>
-                            </tr>
-                            <tr>
-                            <th scope="row">Lorem Ipsum</th>
-                            <td><i class="fas fa-check text-success"></i></td>
-                            <td><i class="fas fa-times text-danger"></i></td>
-                            </tr>
 
                     </tbody>
 

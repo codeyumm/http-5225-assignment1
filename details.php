@@ -44,7 +44,7 @@
 // iter
         foreach ($result as $data) { ?>
             
-            <div class="container ">
+            <div class="container detail-container">
                     <div class="card mb-3 p-4 bg-effect">
 
                         <div class="row g-4">
@@ -67,9 +67,18 @@
                                     <h3> <span class="sub-title">Vitamin B2 - </span> <?php echo $data['vitamin_b2_mg']; ?> mg</h3>
                                     <h3> <span class="sub-title">Niacin - </span> <?php echo $data['niacin_mg']; ?> mg</h3>
                                     <h3> <span class="sub-title">Vitamin C - </span> <?php echo $data['vitamin_c_mg']; ?> mg</h3>
+                                
+                                    
+                                <form action="./edit.php" method="GET">
+
+<input type="submit"  value="Edit" class="btn btn-dark">
+                            
+</form> 
                                 </div>
 
                             </div>
+
+
 
                         </div>
 
@@ -86,11 +95,11 @@
 
 <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
-        <form action="./index.php" method="GET">
+        <!-- <form action="./index.php" method="GET">
 
             <input type="submit"  value="Back" class="btn btn-dark">
                                             
-        </form>
+        </form> -->
     </div>
 </div>
 
