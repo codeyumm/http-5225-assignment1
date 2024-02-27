@@ -69,11 +69,13 @@
                                     <h3> <span class="sub-title">Vitamin C - </span> <?php echo $data['vitamin_c_mg']; ?> mg</h3>
                                 
                                     
-                                <form action="./edit.php" method="GET">
+                                    <form action="./edit.php" method="GET">
 
-<input type="submit"  value="Edit" class="btn btn-dark">
-                            
-</form> 
+                                        <input type="hidden"  value="<?php  echo $food_item_id ?>" name="food_item_id" class="btn btn-dark">
+
+                                        <input type="submit"  value="Edit" class="btn btn-dark">
+                                                                
+                                    </form> 
                                 </div>
 
                             </div>
