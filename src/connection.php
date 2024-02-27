@@ -8,7 +8,7 @@
         $dbHost = "sql111.infinityfree.com";
         $dbUser = "if0_35758787";
         $dbPassword = "BjYWisH2PpLalJ";
-        $dbName = "if0_35758787_http5225";
+        $dbName = "if0_35758787_food";
 
         $conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
 
