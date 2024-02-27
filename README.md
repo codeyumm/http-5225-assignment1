@@ -10,4 +10,4 @@ Created with html, php, mysql and css
 
 
 
-(Click here to see live project)[http://priyam.free.nf/HTTP5225/Assignments/Assignment1/]
+[Click here to see live project](http://priyam.free.nf/HTTP5225/Assignments/Assignment1/)
