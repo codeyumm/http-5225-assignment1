@@ -5,10 +5,10 @@
     function ConnectDB() {
 
         // database host, user, password and db name
-        $dbHost = "localhost";
-        $dbUser = "root";
-        $dbPassword = "root";
-        $dbName = "food";
+        $dbHost = "sql111.infinityfree.com";
+        $dbUser = "if0_35758787";
+        $dbPassword = "BjYWisH2PpLalJ";
+        $dbName = "if0_35758787_http5225";
 
         $conn = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
 
