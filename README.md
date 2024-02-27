@@ -8,6 +8,7 @@
 
 Created with html, php, mysql and css
 
+For the picture I have used unsplash random picture api so some images might be inappropriate
 
 
 [Click here to see live project](http://priyam.free.nf/HTTP5225/Assignments/Assignment1/)
