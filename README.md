@@ -2,12 +2,12 @@
 
 --- 
 
-## Website which shows different food and gives details about calories, price, vitamines and other minerals of that food.
-## There is comparision page where you can compare two food items.
-## If you find any details wrong you can edit it too.
+- Website which shows different food and gives details about calories, price, vitamines and other minerals of that food.
+- There is comparision page where you can compare two food items.
+- If you find any details wrong you can edit it too.
 
 Created with html, php, mysql and css
 
 
 
-See live project here - [http://priyam.free.nf/HTTP5225/Assignments/Assignment1/]
+(Click here to see live project)[http://priyam.free.nf/HTTP5225/Assignments/Assignment1/]
